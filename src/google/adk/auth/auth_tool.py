@@ -129,6 +129,7 @@ class AuthConfig(BaseModelWithConfig):
       auth_credential.oauth2.refresh_token = None
       auth_credential.oauth2.expires_at = None
       auth_credential.oauth2.expires_in = None
+      auth_credential.oauth2.redirect_uri = None
     credential_name = (
         f"{auth_credential.auth_type.value}_{_stable_model_digest(auth_credential)}"
         if auth_credential

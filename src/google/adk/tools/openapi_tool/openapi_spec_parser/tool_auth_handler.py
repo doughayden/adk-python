@@ -70,6 +70,7 @@ class ToolContextCredentialStore:
       auth_credential.oauth2.refresh_token = None
       auth_credential.oauth2.expires_at = None
       auth_credential.oauth2.expires_in = None
+      auth_credential.oauth2.redirect_uri = None
     scheme_name = (
         f"{auth_scheme.type_.name}_{self._legacy_stable_digest(auth_scheme.model_dump_json())}"
         if auth_scheme
@@ -99,6 +100,7 @@ class ToolContextCredentialStore:
       auth_credential.oauth2.refresh_token = None
       auth_credential.oauth2.expires_at = None
       auth_credential.oauth2.expires_in = None
+      auth_credential.oauth2.redirect_uri = None
     scheme_name = (
         f"{auth_scheme.type_.name}_{_stable_model_digest(auth_scheme)}"
         if auth_scheme
